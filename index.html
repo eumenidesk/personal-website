@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Personal Website</title>
     <link rel="icon" type="image/x-icon" href="images/bitbug_favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <style>
         * {
             padding: 0;
@@ -15,13 +20,32 @@
         #canvas {
             position: absolute;
             left: 50%;
+            top: 100px;
             margin-left: -200px;
         }
     </style>
 </head>
 
 <body>
-    <canvas id="canvas"></canvas>11111111111
+    <header>
+        <div class="content">
+            <a href="javascript:;" class="logo_box"></a>
+            <nav>
+                <a href="javascript:;" class="back"></a>
+                <a href="javascript:;" class="active">首页</a>
+                <a href="javascript:;">前端相关</a>
+                <a href="javascript:;">三言两语</a>
+                <a href="javascript:;">关于我</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main_content">
+
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="js/js.js"></script>
     <script>
         var c = document.getElementById('canvas');
         var cxt = c.getContext('2d');
