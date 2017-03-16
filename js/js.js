@@ -3,9 +3,6 @@ $(function() {
         if ($(this).is('.back')) {
             return;
         }
-        var $index = $(this).index();
-        var $width = $(this).width();
-        var $marginLeft = parseInt($(this).css("margin-left"), 10)
-        $('.back').stop().animate({ left: ($index - 1) * ($width + $marginLeft + 4) }, 500, 'easeOutElastic')
+        $('.back').stop().animate({ left: ($(this).index() - 1) * ($(this).width() + parseInt($(this).css("margin-left"), 10) + 4) }, 500, 'easeOutElastic')
     })
 })
