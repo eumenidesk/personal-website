@@ -1,7 +1,6 @@
 $(function() {
     $('nav a').mouseover(function() {
         if ($(this).is('.back')) {
-            console.log('success')
             return;
         }
         var $index = $(this).index();
